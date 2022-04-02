@@ -1,5 +1,7 @@
 # PCBusiness Card
 
+![](https://user-images.githubusercontent.com/2646487/161359757-6e8b9c71-aec6-4de1-924a-eec69777996f.png)
+
 > **Note:** I'm still finalizing the PCB design and default firmware, so this repo is a bit barren for now. If you're reading this, I haven't given the business card to anyone yet, which means you're either very curious or just went back in the commit history (which, I guess, also implies curiosity).
 
 Hiya! Welcome to the documentation for my... business card? Yep, my business card. Which is also a PCB. Chances are you received one from me and are curious enough to scan the QR code on the back.

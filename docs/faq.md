@@ -1,5 +1,9 @@
 # FAQ
 
+## Why?
+
+I've always been fascinated by unique business cards, and I've seen a couple of PCB business cards in the past ([here](https://www.youtube.com/watch?v=zHVrY_xLM3c) is a really cool one). So I thought it would be cool to make one of my own, and hopefully make a great first impression to whoever I give them to. It was also an excellent learning experience in electronics design, giving me knowledge that I can use in future projects.
+
 ## There's a "v2" or "v3" in the top-left of the board, what does it mean?
 
 This is, as you probably guessed, how I version the different revisions of the board.
@@ -14,4 +18,12 @@ If you find yourself in possession of a v2 board, congratulations! There were on
 
 ### v3
 
-v3 is the current version of the board, and fixes the capacitor issue mentioned in v2. It also adjusts the silkscreen so that the words "Software Engineer" and the QR Code don't overlap with the pads for the headers.
+v3 is the current version of the board, and contains these changes:
+
+- The decoupling capacitor for the Neopixels is now connected to ground
+- There is now one decoupling capacitor for each Neopixel
+- CC1 and CC2 on the USB connector are now connected to ground with a 5.1k resistor in between
+- There's a 5V voltage regulator for the Neopixels, because VBUS can actually be higher than 5V
+- The silkscreen for the info on the back was resized to not overlap with the pads
+- Added test pads for QSPI_SS, VBUS, and USB+/-
+- Changed the buttons to both save on cost and make the profile smaller
