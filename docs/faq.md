@@ -18,8 +18,6 @@ If you find yourself in possession of a v2 board, congratulations! There were on
 
 ### v3
 
-v3 is the current version of the board, and contains these changes:
-
 - The decoupling capacitor for the Neopixels is now connected to ground
 - There is now one decoupling capacitor for each Neopixel
 - CC1 and CC2 on the USB connector are now connected to ground with a 5.1k resistor in between
@@ -27,3 +25,14 @@ v3 is the current version of the board, and contains these changes:
 - The silkscreen for the info on the back was resized to not overlap with the pads
 - Added test pads for QSPI_SS, VBUS, and USB+/-
 - Changed the buttons to both save on cost and make the profile smaller
+
+### v4
+
+- Removed 5V regulator, because I am dumb
+- Added optional SWD headers for debugging (this will work well: https://www.adafruit.com/product/752)
+- Neopixel GPIO pin changed to 24 (from 25)
+- Added built-in LED on GPIO 25
+  - This change was made because most other RP2040 boards have an LED on this pin, and it's where the Arduino framework expects it to be
+- Removed reference designators from silkscreen to make it look cleaner
+- KiCad DRC rules modified to use JLCPCB design capabilities
+- Other minor design changes

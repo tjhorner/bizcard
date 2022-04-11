@@ -4,7 +4,7 @@ If you want to write your own code to run on the board, you can totally do that!
 
 ## Building the Default Firmware
 
-A good place to start is with the firmware that comes pre-flashed on the board, since it was designed to be used as a template for custom firmware.
+Included in this repository is a template for custom firmware, with everything all set up and ready to go specifically for this board.
 
 There are a few prequisites you need before we begin:
 
@@ -20,7 +20,7 @@ First, let's clone the repo:
 git clone https://github.com/tjhorner/bizcard.git
 ```
 
-Open the `firmware` directory in VS Code. PlatformIO should recognize this is a PIO project and give you several options in the sidebar under the quick access menu (it's the PIO logo -- kinda looks like an ant or alien or something). If you see options like "Build, "Upload", etc. then you should be good to go.
+Open the `firmware-template` directory in VS Code. PlatformIO should recognize this is a PIO project and give you several options in the sidebar under the quick access menu (it's the PIO logo -- kinda looks like an ant or alien or something). If you see options like "Build, "Upload", etc. then you should be good to go.
 
 Plug the board into your computer, then press "Upload" from VS Code. After a short while (it needs to download all the dependencies and compile the firmware), it should automatically detect the board and flash it. If not, you may need to press and hold the button labeled "USB", then press "RST" simultaneously. Release both buttons and it should now show up as a drive on your computer. Try uploading again.
 
@@ -28,6 +28,10 @@ Once flashed successfully, you should see `[SUCCESS]` near the end of the termin
 
 ## Customizing the Firmware
 
-The default firmware is designed to be used as a jumping-off point for custom firmware; it already includes examples of how to use the onboard peripherals like the piezo buzzer and Neopixels. It also uses the Arduino framework, providing a familiar way to access the hardware and GPIO pins. Take a look at `main.cpp` -- that should be enough to get you started!
+The firmware template is designed to be used as a jumping-off point for custom firmware; it already includes examples of how to use the onboard peripherals like the piezo buzzer and Neopixels. It also uses the Arduino framework, providing a familiar way to access the hardware and GPIO pins. Take a look at `main.cpp` -- that should be enough to get you started!
 
 If you followed the section above, flashing is exactly the same. Just re-run the upload after you've made your modifications. If you need any help, well... you know how to reach me :)
+
+## Other Methods
+
+There are other ways to write and flash firmware for RP2040-based boards like this one; for example, anything that supports the Raspberry Pi Pico should work. But note that you may run into strange quirks, because the Pico uses some of the RP2040 pins for internal functions, and the compiled firmware assumes these.

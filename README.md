@@ -1,12 +1,21 @@
 # PCBusiness Card
 
-![](https://user-images.githubusercontent.com/2646487/161359757-6e8b9c71-aec6-4de1-924a-eec69777996f.png)
+![](https://user-images.githubusercontent.com/2646487/162638601-5f43af5c-dab9-4c7f-9c47-570abe200760.png)
 
 > **Note:** I'm still finalizing the PCB design and default firmware, so this repo is a bit barren for now. If you're reading this, I haven't given the business card to anyone yet, which means you're either very curious or just went back in the commit history (which, I guess, also implies curiosity).
 
 Hiya! Welcome to the documentation for my... business card? Yep, my business card. Which is also a PCB. Chances are you received one from me and are curious enough to scan the QR code on the back.
 
-In these docs, you'll find information on the specs, how to flash it, which peripherals are onboard, how to do cool stuff with it, and (if you received a bare board) where to source the parts you'll need to assemble it. You'll also find the source KiCad project files for the schematic and board, as well as the source for the firmware that is installed by default. These are open source under BY-CC-SA 4.0 and MIT, so feel free to base your own designs on them.
+In these docs, you'll find information on the specs, how to flash it, which peripherals are onboard, how to do cool stuff with it, and (if you received a bare board) where to source the parts you'll need to assemble it. You'll also find the source KiCad project files for the schematic and board, as well as the source for the firmware that is installed by default. These are open source under CC-BY-SA 4.0 and MIT, so feel free to base your own designs on them.
+
+## Quick Start
+
+If you want to check out all this board has to offer...
+
+- Look at the docs for the [default firmware](docs/firmware.md). It goes in detail on what it does, and how you can connect to it to your computer via serial to enjoy the whole experience.
+- Come back here to dive into the specs, then try your hand at [writing your own firmware](docs/flashing.md) (if you've programmed an Arduino before, it'll be a piece of cake).
+
+After that, it's up to you! You can solder on some GPIO headers and connect whatever the heck you want and make it your own. Blinky Christmas lights? Sure! Doorbell? Why not! Pacemaker? Ok maybe not that. You have the full power of the RP2040 at your disposal, plus a hefty amount of flash you can use to store anything you want.
 
 ## Documentation
 
@@ -76,7 +85,7 @@ On the prepopulated boards I used [this buzzer](https://lcsc.com/product-detail/
 
 #### WS2812B (aka NeoPixel)
 
-There are four WS2812B RGB LEDs on the top-right of the board connected to GPIO25 that you can do whatever you want with. The cool thing about these LEDs is that they have a built-in driver chip and you can link them together to control as many as you want from just a single data pin. There are a couple of libraries you can use to drive them, but I like Adafruit's [NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel).
+There are four WS2812B RGB LEDs on the top-right of the board connected to GPIO24 that you can do whatever you want with. The cool thing about these LEDs is that they have a built-in driver chip and you can link them together to control as many as you want from just a single data pin. There are a couple of libraries you can use to drive them, but I like Adafruit's [NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel).
 
 - [WS2812B Datasheet](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf)
 
