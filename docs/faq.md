@@ -34,5 +34,6 @@ If you find yourself in possession of a v2 board, congratulations! There were on
 - Added built-in LED on GPIO 25
   - This change was made because most other RP2040 boards have an LED on this pin, and it's where the Arduino framework expects it to be
 - Removed reference designators from silkscreen to make it look cleaner
+- Swapped GND and 3V3 on the headers, because it makes more sense that GND is pin 1
 - KiCad DRC rules modified to use JLCPCB design capabilities
 - Other minor design changes

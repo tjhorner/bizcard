@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "custom")(type "KiCad")(uri "${KIPRJMOD}/footprints")(options "")(descr ""))
+  (lib (name "digikey-footprints")(type "KiCad")(uri "/Users/tj/Documents/digikey-kicad-library/digikey-footprints.pretty")(options "")(descr ""))
+)

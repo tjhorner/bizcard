@@ -2,11 +2,15 @@
 
 ![](https://user-images.githubusercontent.com/2646487/162638601-5f43af5c-dab9-4c7f-9c47-570abe200760.png)
 
-> **Note:** I'm still finalizing the PCB design and default firmware, so this repo is a bit barren for now. If you're reading this, I haven't given the business card to anyone yet, which means you're either very curious or just went back in the commit history (which, I guess, also implies curiosity).
-
 Hiya! Welcome to the documentation for my... business card? Yep, my business card. Which is also a PCB. Chances are you received one from me and are curious enough to scan the QR code on the back.
 
 In these docs, you'll find information on the specs, how to flash it, which peripherals are onboard, how to do cool stuff with it, and (if you received a bare board) where to source the parts you'll need to assemble it. You'll also find the source KiCad project files for the schematic and board, as well as the source for the firmware that is installed by default. These are open source under CC-BY-SA 4.0 and MIT, so feel free to base your own designs on them.
+
+## Directory Structure
+
+- `docs`: Various documents about the project, including hardware info, flashing instructions, etc.
+- `firmware`: Default firmware that ships with the board
+- `pcb`: KiCad project files for the PCB
 
 ## Quick Start
 
@@ -21,6 +25,7 @@ After that, it's up to you! You can solder on some GPIO headers and connect what
 
 - [Bill of Materials](docs/bom.md)
 - [Flashing Instructions](docs/flashing.md)
+- [Schematic](docs/schematic.pdf)
 - [FAQ](docs/faq.md)
 
 ## Bare Board Assembly
