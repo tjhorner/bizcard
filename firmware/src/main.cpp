@@ -19,6 +19,11 @@ char Arduino_getchar()
 // Core 0 entrypoint (handles graphics)
 void setup()
 {
+#if BIZCARD_V4
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
+#endif
+
   setFunction_putchar(Arduino_putchar);
   setFunction_getchar(Arduino_getchar);
 }
